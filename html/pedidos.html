@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<header>
+    <nav class="navBar">
+        <a class="navBox one navText" href="catalogo.html">Catálogo</a>
+        <a class="navBox two navText" href="club.html">Club</a>
+        <a class="navBox three navBoxIndex navText" href="../index.html">Inicio</a>
+        <a class="navBox four navText" href="nosotros.html">Nosotros</a>
+        <a class="navBox five navText" href="pedidos.html">Pedidos</a>
+    </nav>
+</header>
+
+<body>
+    <button class="userMenu">
+        <img class="buttonBox" src="../images/icons/usermenu_48.png" alt="usermenu_48">
+    </button>
+
+    <nav id="shipBox">
+        <h1 class="text"> Hace tu encargo </h1>
+        <nav>
+            <form class="text" action="pedido.php" method="post">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name" placeholder="Nombre" required>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <label for="phone">Teléfono</label>
+                <input type="tel" name="phone" id="phone" placeholder="Teléfono" required>
+                <label for="address">Dirección</label>
+                <input type="text" name="address" id="address" placeholder="Dirección" required>
+                <label for="product">Producto</label>
+                <input type="text" name="product" id="product" placeholder="Producto" required>
+                <label for="quantity">Cantidad</label>
+                <input type="number" name="quantity" id="quantity" placeholder="Cantidad" required><br>
+                <label for="message">Mensaje</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </nav>
+
+    </nav>
+</body>
+<footer>
+
+    <nav class="footerBox">
+        <nav class="icon">
+            <button><img src="../images/icons/instagram_48.png" alt="instagram_48"></button>
+            <button><img src="../images/icons/telegram_48.png" alt="telegram_48"></button>
+        </nav>
+        <nav class="footerText">
+            <p>© 2023 - Todos los derechos reservados</p>
+        </nav>
+
+</footer>
+
+</html>
