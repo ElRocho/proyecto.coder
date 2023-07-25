@@ -173,4 +173,24 @@ button {
     letter-spacing: 1.5px;
 }
 
+/*# Catalogo */
+
+.gridBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.catalogoBox {
+    list-style-type: none;
+    background-color: #3A3243;
+    border-radius: 15px;
+    border-color: #1a1418;
+    border-style: solid;
+    border-width: 3px;
+    color: #e1e1e1;
+    text-align: center;
+
+}
+
 /*# NosotrosCss */
