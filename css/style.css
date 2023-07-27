@@ -80,6 +80,68 @@ body {
     border-color: #3A3243; */
 }
 
+/*# Bottom Nav  */
+
+@media screen and (max-width: 768px) {
+    .navBar {
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        background-color: #3A3243;
+    }
+
+    .navBox {
+        border-color: #daa520;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 8px 8px 0px 0px;
+    }
+
+    .navBox h1 {
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-family: 'Manrope', sans-serif;
+        font-weight: 500;
+        color: #e1e1e1;
+        transition: all 0.3s ease;
+        font-size: 20px;
+        letter-spacing: 1.5px;
+        margin: 0px;
+
+    }
+
+    .navBar a:visited {
+        color: #e1e1e1;
+    }
+
+    .navBar a:first-child {
+        border-left: none;
+        border-radius: 8px 8px 0px 0px;
+    }
+
+    .navBar a:last-child {
+        border-right: none;
+        border-radius: 8px 8px 0px 0px;
+    }
+
+    .navBar a:link {
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-family: 'Manrope', sans-serif;
+        font-weight: 500;
+        color: #e1e1e1;
+        transition: all 0.3s ease;
+        font-size: 20px;
+        letter-spacing: 1.5px;
+    }
+
+}
+
 button {
     background-color: transparent;
     border: none;
