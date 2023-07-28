@@ -86,25 +86,12 @@ button {
     cursor: pointer;
 }
 
-.userMenu {
-    position: absolute;
-    display: inline-block;
-    margin: 15px 0px 0px 30px;
-    background-color: transparent;
-    border-radius: 2px;
-}
-
-.userMenu img:hover {
-    background-color: rgb(58, 50, 67, .8);
-    border-radius: 8px;
-    transition: all 0.3s ease;
-}
-
 .adsTextBox {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    margin: auto;
+    width: 85%;
 }
 
 .adsTextBox p {
@@ -123,17 +110,21 @@ button {
 }
 
 .imgBox {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
+    margin-top: 3rem;
+    row-gap: 1rem;
 }
 
-@media screen and (max-width: 768px) {
-    .imgBox {
-        flex-direction: column;
-        margin: 1rem;
+@media (max-width: 767px) {
+    .col-lg-6 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .col-lg-6 img {
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -141,6 +132,8 @@ button {
     padding-left: 15%;
     padding-right: 15%;
     gap: 1rem;
+    margin-top: 1rem;
+
 }
 
 .footerBox {
@@ -264,8 +257,8 @@ button {
     }
 
     .carouselImg {
-        padding-left: 3%;
-        padding-right: 3%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 }
 
