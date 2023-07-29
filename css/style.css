@@ -92,6 +92,7 @@ button {
     align-items: center;
     margin: auto;
     width: 85%;
+    margin-top: 1rem;
 }
 
 .adsTextBox p {
@@ -100,6 +101,7 @@ button {
     border-radius: 5px;
     padding: 12px;
     font-family: 'Manrope', sans-serif;
+    font-size: 1.5vw;
 }
 
 .adsTextBox p:hover {
@@ -227,6 +229,10 @@ button {
     .navBox {
 
         border-radius: 8px 8px 0px 0px;
+    }
+
+    .adsTextBox p {
+        font-size: 14px;
     }
 
     .navBox h1 {
