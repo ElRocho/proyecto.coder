@@ -115,7 +115,7 @@ button {
 }
 
 .imgSize {
-    width: 1000px;
+    width: 700px;
     height: auto;
     margin-left: 2%;
     margin-right: 2%;
@@ -237,10 +237,9 @@ button {
         font-weight: 500;
         color: #e1e1e1;
         transition: all 0.3s ease;
-        font-size: 20px;
         letter-spacing: 1.5px;
         margin: 0px;
-
+        font-size: 0px;
     }
 
     .navBar a:visited {
@@ -265,7 +264,7 @@ button {
         font-weight: 500;
         color: #e1e1e1;
         transition: all 0.3s ease;
-        font-size: 20px;
+        font-size: 2vw;
         letter-spacing: 1.5px;
     }
 
