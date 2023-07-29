@@ -272,6 +272,11 @@ button {
         padding-left: 5%;
         padding-right: 5%;
     }
+
+    i {
+        color: #daa520;
+        display: none;
+    }
 }
 
 
