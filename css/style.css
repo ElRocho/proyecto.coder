@@ -114,6 +114,14 @@ button {
     row-gap: 1rem;
 }
 
+.imgSize {
+    width: 1000px;
+    height: auto;
+    margin-left: 2%;
+    margin-right: 2%;
+
+}
+
 @media (max-width: 767px) {
     .col-lg-6 {
         width: 100%;
@@ -125,6 +133,11 @@ button {
     .col-lg-6 img {
         width: 100%;
         height: auto;
+    }
+
+    .imgSize {
+        width: 900px;
+        height: 562px;
     }
 }
 
