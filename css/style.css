@@ -335,3 +335,47 @@ button {
 }
 
 /*# NosotrosCss */
+
+#aboutBox {
+    background-color: #3A3243;
+    border-radius: 15px;
+    border-color: #1a1418;
+    border-style: solid;
+    border-width: 3px;
+    color: #e1e1e1;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    margin: 12px;
+}
+
+/*# ClubCss */
+
+#clubBox {
+    background-color: #3A3243;
+    border-radius: 15px;
+    border-color: #1a1418;
+    border-style: solid;
+    border-width: 3px;
+    color: #e1e1e1;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    margin: 12px;
+}
+
+.clubJoin {
+    background-color: #1a1418;
+    border-color: #e1e1e1;
+    color: #e1e1e1;
+    border-radius: 8px;
+    box-shadow: #daa520 0px 0px 10px 0px;
+}
+
+.clubJoin:hover {
+    background-color: #daa520;
+    border-color: #1a1418;
+    color: #1a1418;
+    border-radius: 8px;
+    box-shadow: #daa520 0px 0px 10px 0px;
+}
