@@ -5,377 +5,374 @@
 --secondary-button: #fdf7fb;
 --accent: #daa520; */
 
-
 body {
-    background-color: #1a1418;
+  background-color: #1a1418;
 
-    /* background: rgb(99, 69, 99); 
+  /* background: rgb(99, 69, 99); 
     background: radial-gradient(circle, rgba(99, 69, 99, 1) 28%, rgba(88, 62, 88, 1) 60%, rgba(74, 52, 73, 1) 83%, rgba(61, 44, 60, 1) 95%);    */
-    margin: 0;
+  margin: 0;
 }
 
 /*# indexCss */
 .navBar {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .navBox h1 {
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-family: 'Manrope', sans-serif;
-    font-weight: 500;
-    color: #e1e1e1;
-    transition: all 0.3s ease;
-    font-size: 20px;
-    letter-spacing: 1.5px;
-    margin: 0px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  color: #e1e1e1;
+  transition: all 0.3s ease;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  margin: 0px;
 }
 
 .navBar a:visited {
-    color: #e1e1e1;
+  color: #e1e1e1;
 }
 
 .navBar a:hover {
-    color: #daa520;
-    background-color: #3A3243;
+  color: #daa520;
+  background-color: #3a3243;
 }
 
 .navBar a:first-child {
-    border-left: none;
-    border-radius: 0px 0px 8px 0px;
+  border-left: none;
+  border-radius: 0px 0px 8px 0px;
 }
 
 .navBar a:last-child {
-    border-right: none;
-    border-radius: 0px 0px 0px 8px;
+  border-right: none;
+  border-radius: 0px 0px 0px 8px;
 }
 
 .navBar a:link {
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-family: 'Manrope', sans-serif;
-    font-weight: 500;
-    color: #e1e1e1;
-    transition: all 0.3s ease;
-    font-size: 20px;
-    letter-spacing: 1.5px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  color: #e1e1e1;
+  transition: all 0.3s ease;
+  font-size: 20px;
+  letter-spacing: 1.5px;
 }
 
-
 .navBox {
-    background-color: transparent;
-    list-style-position: inside;
-    list-style: none;
-    padding: 10px;
-    border-radius: 0px 0px 8px 8px;
-    margin: 0px;
-    flex: 1;
+  background-color: transparent;
+  list-style-position: inside;
+  list-style: none;
+  padding: 10px;
+  border-radius: 0px 0px 8px 8px;
+  margin: 0px;
+  flex: 1;
 
-    /*  border-width: 0px 3px 3px 3px;
+  /*  border-width: 0px 3px 3px 3px;
     border-style: solid;
     border-color: #3A3243; */
 }
 
 button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .adsTextBox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    width: 85%;
-    margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 85%;
+  margin-top: 1rem;
 }
 
 .adsTextBox p {
-    background-color: rgb(218, 165, 32, .6);
-    color: #1a1418;
-    border-radius: 5px;
-    padding: 12px;
-    font-family: 'Manrope', sans-serif;
-    font-size: 1.5vw;
+  background-color: rgb(218, 165, 32, 0.6);
+  color: #1a1418;
+  border-radius: 5px;
+  padding: 12px;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.5vw;
 }
 
 .adsTextBox p:hover {
-    background-color: rgb(218, 165, 32, .8);
-    color: #1a1418;
-    border-radius: 5px;
-    transition: all 0.3s ease;
+  background-color: rgb(218, 165, 32, 0.8);
+  color: #1a1418;
+  border-radius: 5px;
+  transition: all 0.3s ease;
 }
 
 .imgBox {
-    margin-top: 3rem;
-    row-gap: 1rem;
+  margin-top: 3rem;
+  row-gap: 1rem;
 }
 
 .imgSize {
-    width: 700px;
-    height: auto;
-    margin-left: 2%;
-    margin-right: 2%;
-
+  width: 700px;
+  height: auto;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 @media (max-width: 767px) {
-    .col-lg-6 {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  .col-lg-6 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .col-lg-6 img {
-        width: 100%;
-        height: auto;
-    }
+  .col-lg-6 img {
+    width: 100%;
+    height: auto;
+  }
 
-    .imgSize {
-        width: 900px;
-        height: 562px;
-    }
+  .imgSize {
+    width: 900px;
+    height: 562px;
+  }
 }
 
 .carouselImg {
-    padding-left: 15%;
-    padding-right: 15%;
-    gap: 1rem;
-    margin-top: 1rem;
-
+  padding-left: 15%;
+  padding-right: 15%;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
 .footerBox {
-    background-color: #3A3243;
-    width: 100%;
-    height: 150px;
-    border-radius: 15px 15px 0px 0px;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
+  background-color: #3a3243;
+  width: 100%;
+  height: 150px;
+  border-radius: 15px 15px 0px 0px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
 }
 
 .footer_wrapper {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .icon {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 .icon button:hover {
-    background-color: #1a1418;
-    border-radius: 8px;
-    transition: all 0.3s ease;
+  background-color: #1a1418;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
 .footerText {
-    color: #e1e1e1;
-    font-family: 'Manrope', sans-serif;
-    font-weight: 500;
-    font-size: 1vw;
-    letter-spacing: 1.5px;
+  color: #e1e1e1;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 1vw;
+  letter-spacing: 1.5px;
 }
 
 /*# Catalogo */
 
 .gridBox {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .catalogoBox {
-    list-style-type: none;
-    background-color: #3A3243;
-    border-radius: 15px;
-    border-color: #1a1418;
-    border-style: solid;
-    border-width: 3px;
-    color: #e1e1e1;
-    text-align: center;
-    padding: 10px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
-    margin: 12px;
+  list-style-type: none;
+  background-color: #3a3243;
+  border-radius: 15px;
+  border-color: #1a1418;
+  border-style: solid;
+  border-width: 3px;
+  color: #e1e1e1;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  margin: 12px;
 }
 
 .gridLeft {
-    grid-column: 2 / 6;
+  grid-column: 2 / 6;
 }
 
 .gridRight {
-    grid-column: 8 / 12;
+  grid-column: 8 / 12;
 }
 
 /*# Mobile Query  */
 
 @media screen and (max-width: 768px) {
-    .navBar {
-        position: fixed;
-        bottom: 0;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-        background-color: #3A3243;
-        border-radius: 8px 8px 0px 0px;
-    }
+  .navBar {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: #3a3243;
+    border-radius: 8px 8px 0px 0px;
+  }
 
-    .navBox {
+  .navHide {
+    display: none;
+  }
+  .navBox {
+    border-radius: 8px 8px 0px 0px;
+  }
 
-        border-radius: 8px 8px 0px 0px;
-    }
+  .adsTextBox p {
+    font-size: 14px;
+  }
 
-    .adsTextBox p {
-        font-size: 14px;
-    }
+  .navBox h1 {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    color: #e1e1e1;
+    transition: all 0.3s ease;
+    letter-spacing: 1.5px;
+    margin: 0px;
+    font-size: 0px;
+  }
 
-    .navBox h1 {
-        text-align: center;
-        text-transform: uppercase;
-        text-decoration: none;
-        font-family: 'Manrope', sans-serif;
-        font-weight: 500;
-        color: #e1e1e1;
-        transition: all 0.3s ease;
-        letter-spacing: 1.5px;
-        margin: 0px;
-        font-size: 0px;
-    }
+  .navBar a:visited {
+    color: #e1e1e1;
+  }
 
-    .navBar a:visited {
-        color: #e1e1e1;
-    }
+  .navBar a:first-child {
+    border-left: none;
+    border-radius: 8px 8px 0px 0px;
+  }
 
-    .navBar a:first-child {
-        border-left: none;
-        border-radius: 8px 8px 0px 0px;
-    }
+  .navBar a:last-child {
+    border-right: none;
+    border-radius: 8px 8px 0px 0px;
+  }
 
-    .navBar a:last-child {
-        border-right: none;
-        border-radius: 8px 8px 0px 0px;
-    }
+  .navBar a:link {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    color: #e1e1e1;
+    transition: all 0.3s ease;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+  }
 
-    .navBar a:link {
-        text-align: center;
-        text-transform: uppercase;
-        text-decoration: none;
-        font-family: 'Manrope', sans-serif;
-        font-weight: 500;
-        color: #e1e1e1;
-        transition: all 0.3s ease;
-        font-size: 10px;
-        letter-spacing: 1.5px;
-    }
+  .carouselImg {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 
-    .carouselImg {
-        padding-left: 5%;
-        padding-right: 5%;
-    }
+  i {
+    color: #daa520;
+    display: none;
+  }
 
-    i {
-        color: #daa520;
-        display: none;
-    }
+  .icon {
+    width: 30px;
+    height: 30px;
+  }
 
-    .icon {
-        width: 30px;
-        height: 30px;
-    }
+  .footerBox {
+    display: none;
+  }
 
-    .footerBox {
-        display: none;
-    }
-
-    .footerText {
-        font-size: 1rem;
-    }
+  .footerText {
+    font-size: 1rem;
+  }
 }
 
 /*# PedidosCss */
 
 .text {
-    color: #e1e1e1;
-    font-family: 'Manrope', sans-serif;
-    font-weight: 500;
-    font-size: 1rem;
-    letter-spacing: 1.5px;
-    text-align: center;
+  color: #e1e1e1;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  text-align: center;
 }
 
 .shipBox {
-    border-style: solid;
-    border-width: 3px;
-    border-radius: 15px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    background-color: #3A3243;
-    border-color: #1a1418;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
-
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 15px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #3a3243;
+  border-color: #1a1418;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
 @media screen and (max-width: 768px) {
-    .text {
-        font-size: 0.8rem;
-    }
+  .text {
+    font-size: 0.8rem;
+  }
 }
 
 /*# NosotrosCss */
 
 #aboutBox {
-    background-color: #3A3243;
-    border-radius: 15px;
-    border-color: #1a1418;
-    border-style: solid;
-    border-width: 3px;
-    color: #e1e1e1;
-    text-align: center;
-    padding: 10px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
-    margin: 12px;
+  background-color: #3a3243;
+  border-radius: 15px;
+  border-color: #1a1418;
+  border-style: solid;
+  border-width: 3px;
+  color: #e1e1e1;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  margin: 12px;
 }
 
 /*# ClubCss */
 
 #clubBox {
-    background-color: #3A3243;
-    border-radius: 15px;
-    border-color: #1a1418;
-    border-style: solid;
-    border-width: 3px;
-    color: #e1e1e1;
-    text-align: center;
-    padding: 10px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
-    margin: 12px;
+  background-color: #3a3243;
+  border-radius: 15px;
+  border-color: #1a1418;
+  border-style: solid;
+  border-width: 3px;
+  color: #e1e1e1;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  margin: 12px;
 }
 
 .clubJoin {
-    background-color: #1a1418;
-    border-color: #e1e1e1;
-    color: #e1e1e1;
-    border-radius: 8px;
-    box-shadow: #daa520 0px 0px 10px 0px;
+  background-color: #1a1418;
+  border-color: #e1e1e1;
+  color: #e1e1e1;
+  border-radius: 8px;
+  box-shadow: #daa520 0px 0px 10px 0px;
 }
 
 .clubJoin:hover {
-    background-color: #daa520;
-    border-color: #1a1418;
-    color: #1a1418;
-    border-radius: 8px;
-    box-shadow: #daa520 0px 0px 10px 0px;
+  background-color: #daa520;
+  border-color: #1a1418;
+  color: #1a1418;
+  border-radius: 8px;
+  box-shadow: #daa520 0px 0px 10px 0px;
 }
