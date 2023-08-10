@@ -1,77 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pedidos</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="navBar">
-            <a class="navBox navtext" href="catalogo.html">Catálogo <br> <i
-                    class="fa-solid fa-bag-shopping d-md-none"></i></a>
-            <a class="navBox navtext" href="club.html">Club <br><i class="fa-solid fa-gem d-md-none"></i></a>
-            <a class="navBox navBoxIndex navText" href="../index.html">Inicio <br><i
-                    class="d-md-none fa-solid fa-house"></i></a>
-            <a class="navBox navText" href="nosotros.html">Nosotros<br><i class="fa-solid fa-users d-md-none"></i></a>
-            <a class="navBox navText" href="pedidos.html">Pedidos <br><i
-                    class="fa-solid fa-truck-fast d-md-none"></i></a>
-        </nav>
+      <nav class="navBar">
+        <a class="navBox navtext" href="catalogo.html"
+          >Catálogo <br />
+          <i class="fa-solid fa-bag-shopping d-md-none"></i
+        ></a>
+        <a class="navBox navtext" href="club.html"
+          >Club <br /><i class="fa-solid fa-gem d-md-none"></i
+        ></a>
+        <a class="navBox navBoxIndex navText" href="../index.html"
+          >Inicio <br /><i class="d-md-none fa-solid fa-house"></i
+        ></a>
+        <a class="navBox navText" href="nosotros.html"
+          >Nosotros<br /><i class="fa-solid fa-users d-md-none"></i
+        ></a>
+        <a class="navBox navText" href="pedidos.html"
+          >Pedidos <br /><i class="fa-solid fa-truck-fast d-md-none"></i
+        ></a>
+      </nav>
     </header>
 
     <section class="text shipBox container my-5">
-        <h1> Hace tu encargo </h1>
-        <hr>
-        <nav class="mt-4">
-            <form class="row row-gap-3">
-                <div class="col-12">
-                    <label for="formGroupExampleInput" class="form-label">Nombre completo</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Pepito Messi">
-                </div>
-                <div class="col-12">
-                    <label for="formGroupExampleInput" class="form-label">Dirección</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput"
-                        placeholder="Av. Siempre Viva 745">
-                </div>
-                <div class="col-12">
-                    <label for="formGroupExampleInput" class="form-label">Observaciones</label>
-                    <textarea rows="5" class="form-control" id="formGroupExampleInput">  </textarea>
-                </div>
-                <div class="col-12">
-                    <label for="formGroupExampleInput2" class="form-label">Adjuntá tu diseño</label>
-                    <input type="file" class="form-control" id="formGroupExampleInput2"
-                        placeholder="Another input placeholder">
-                    <small class="text-start">(.jpg/-jpeg/.png)(max.2MB)</small>
-                </div>
-
-        </nav>
-
+      <h1>Hace tu encargo</h1>
+      <hr />
+      <form class="row row-gap-3 mt-4">
+        <div class="col-12">
+          <label for="formGroupExampleInput" class="form-label"
+            >Nombre completo</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="formGroupExampleInput"
+            placeholder="Pepito Messi"
+          />
+        </div>
+        <div class="col-12">
+          <label for="formGroupExampleInput" class="form-label"
+            >Dirección</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="formGroupExampleInput"
+            placeholder="Av. Siempre Viva 745"
+          />
+        </div>
+        <div class="col-12">
+          <label for="formGroupExampleInput" class="form-label"
+            >Observaciones</label
+          >
+          <textarea rows="5" class="form-control" id="formGroupExampleInput">
+          </textarea>
+        </div>
+        <div class="col-12">
+          <label for="formGroupExampleInput2" class="form-label"
+            >Adjuntá tu diseño</label
+          >
+          <input
+            type="file"
+            class="form-control"
+            id="formGroupExampleInput2"
+            placeholder="Another input placeholder"
+          />
+          <small class="text-start">(.jpg/-jpeg/.png)(max.2MB)</small>
+        </div>
+      </form>
     </section>
 
     <footer class="footer_wrapper">
-
-        <div class="footerBox">
-            <nav>
-                <button><img class="icon" src="../images/icons/instagram_48.png" alt="instagram_48"></button>
-                <button><img class="icon" src="../images/icons/telegram_48.png" alt="telegram_48"></button>
-            </nav>
-            <nav class="footerText">
-                <p>© 2023 - Todos los derechos reservados</p>
-            </nav>
+      <div class="footerBox">
+        <div>
+          <button>
+            <img
+              class="icon"
+              src="../images/icons/instagram_48.png"
+              alt="instagram_48"
+            />
+          </button>
+          <button>
+            <img
+              class="icon"
+              src="../images/icons/telegram_48.png"
+              alt="telegram_48"
+            />
+          </button>
         </div>
+        <div class="footerText">
+          <p>© 2023 - Todos los derechos reservados</p>
+        </div>
+      </div>
     </footer>
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"></script>
-<script src="https://kit.fontawesome.com/95b1df7507.js" crossorigin="anonymous"></script>
-
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://kit.fontawesome.com/95b1df7507.js"
+    crossorigin="anonymous"
+  ></script>
 </html>
