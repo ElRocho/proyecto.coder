@@ -1,0 +1,26 @@
+.text {
+  color: #e1e1e1;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+
+.shipBox {
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 15px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #3a3243;
+  border-color: #1a1418;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+@media screen and (max-width: 768px) {
+  .text {
+    font-size: 0.8rem;
+  }
+}

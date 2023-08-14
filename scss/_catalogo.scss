@@ -1,0 +1,27 @@
+.gridBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.catalogoBox {
+  list-style-type: none;
+  background-color: #3a3243;
+  border-radius: 15px;
+  border-color: #1a1418;
+  border-style: solid;
+  border-width: 3px;
+  color: #e1e1e1;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  margin: 12px;
+}
+
+.gridLeft {
+  grid-column: 2 / 6;
+}
+
+.gridRight {
+  grid-column: 8 / 12;
+}

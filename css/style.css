@@ -1,19 +1,20 @@
-/*!  color palette
---text: #f4f1f3;
---background: #1a1418;
---primary-button: #86729d; d- #3A3243
---secondary-button: #fdf7fb;
---accent: #daa520; */
-
 body {
   background-color: #1a1418;
-
-  /* background: rgb(99, 69, 99); 
-    background: radial-gradient(circle, rgba(99, 69, 99, 1) 28%, rgba(88, 62, 88, 1) 60%, rgba(74, 52, 73, 1) 83%, rgba(61, 44, 60, 1) 95%);    */
   margin: 0;
 }
 
-/*# indexCss */
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  i {
+    color: #daa520;
+    display: none;
+  }
+}
 .navBar {
   display: flex;
   justify-content: space-around;
@@ -72,18 +73,61 @@ body {
   border-radius: 0px 0px 8px 8px;
   margin: 0px;
   flex: 1;
-
-  /*  border-width: 0px 3px 3px 3px;
-    border-style: solid;
-    border-color: #3A3243; */
 }
 
-button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
+@media screen and (max-width: 768px) {
+  .navBar {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: #3a3243;
+    border-radius: 8px 8px 0px 0px;
+  }
+  .navHide {
+    display: none;
+  }
+  .navBox {
+    border-radius: 8px 8px 0px 0px;
+    transition: all 0.3s ease;
+  }
+  .navBox h1 {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    color: #e1e1e1;
+    transition: all 0.3s ease;
+    letter-spacing: 1.5px;
+    margin: 0px;
+    font-size: 0px;
+  }
+  .navBar a:visited {
+    color: #e1e1e1;
+  }
+  .navBar a:first-child {
+    border-left: none;
+    border-radius: 8px 8px 0px 0px;
+  }
+  .navBar a:last-child {
+    border-right: none;
+    border-radius: 8px 8px 0px 0px;
+  }
+  .navBar a:link {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    color: #e1e1e1;
+    transition: all 0.3s ease;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+  }
 }
-
 .adsTextBox {
   display: flex;
   justify-content: center;
@@ -94,7 +138,7 @@ button {
 }
 
 .adsTextBox p {
-  background-color: rgb(218, 165, 32, 0.6);
+  background-color: rgba(218, 165, 32, 0.6);
   color: #1a1418;
   border-radius: 5px;
   padding: 12px;
@@ -103,50 +147,17 @@ button {
 }
 
 .adsTextBox p:hover {
-  background-color: rgb(218, 165, 32, 0.8);
+  background-color: rgba(218, 165, 32, 0.8);
   color: #1a1418;
   border-radius: 5px;
   transition: all 0.3s ease;
 }
 
-.imgBox {
-  margin-top: 3rem;
-  row-gap: 1rem;
-}
-
-.imgSize {
-  width: 700px;
-  height: auto;
-  margin-left: 2%;
-  margin-right: 2%;
-}
-
 @media (max-width: 767px) {
-  .col-lg-6 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .col-lg-6 img {
-    width: 100%;
-    height: auto;
-  }
-
-  .imgSize {
-    width: 900px;
-    height: 562px;
+  .adsTextBox {
+    font-size: 50px;
   }
 }
-
-.carouselImg {
-  padding-left: 15%;
-  padding-right: 15%;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
 .footerBox {
   background-color: #3a3243;
   width: 100%;
@@ -184,8 +195,59 @@ button {
   letter-spacing: 1.5px;
 }
 
-/*# Catalogo */
+@media screen and (max-width: 768px) {
+  .icon {
+    width: 30px;
+    height: 30px;
+  }
+  .footerBox {
+    display: none;
+  }
+  .footerText {
+    font-size: 1rem;
+  }
+}
+.imgBox {
+  margin-top: 3rem;
+  row-gap: 1rem;
+}
 
+.imgSize {
+  width: 700px;
+  height: auto;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+@media (max-width: 767px) {
+  .col-lg-6 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .col-lg-6 img {
+    width: 100%;
+    height: auto;
+  }
+  .imgSize {
+    width: 900px;
+    height: 562px;
+  }
+}
+.carouselImg {
+  padding-left: 15%;
+  padding-right: 15%;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .carouselImg {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
 .gridBox {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -207,103 +269,12 @@ button {
 }
 
 .gridLeft {
-  grid-column: 2 / 6;
+  grid-column: 2/6;
 }
 
 .gridRight {
-  grid-column: 8 / 12;
+  grid-column: 8/12;
 }
-
-/*# Mobile Query  */
-
-@media screen and (max-width: 768px) {
-  .navBar {
-    position: fixed;
-    bottom: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    background-color: #3a3243;
-    border-radius: 8px 8px 0px 0px;
-  }
-
-  .navHide {
-    display: none;
-  }
-  .navBox {
-    border-radius: 8px 8px 0px 0px;
-    transition: all 0.3s ease;
-  }
-
-  .adsTextBox p {
-    font-size: 14px;
-  }
-
-  .navBox h1 {
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-family: "Manrope", sans-serif;
-    font-weight: 500;
-    color: #e1e1e1;
-    transition: all 0.3s ease;
-    letter-spacing: 1.5px;
-    margin: 0px;
-    font-size: 0px;
-  }
-
-  .navBar a:visited {
-    color: #e1e1e1;
-  }
-
-  .navBar a:first-child {
-    border-left: none;
-    border-radius: 8px 8px 0px 0px;
-  }
-
-  .navBar a:last-child {
-    border-right: none;
-    border-radius: 8px 8px 0px 0px;
-  }
-
-  .navBar a:link {
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-family: "Manrope", sans-serif;
-    font-weight: 500;
-    color: #e1e1e1;
-    transition: all 0.3s ease;
-    font-size: 10px;
-    letter-spacing: 1.5px;
-  }
-
-  .carouselImg {
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-
-  i {
-    color: #daa520;
-    display: none;
-  }
-
-  .icon {
-    width: 30px;
-    height: 30px;
-  }
-
-  .footerBox {
-    display: none;
-  }
-
-  .footerText {
-    font-size: 1rem;
-  }
-}
-
-/*# PedidosCss */
 
 .text {
   color: #e1e1e1;
@@ -331,24 +302,6 @@ button {
     font-size: 0.8rem;
   }
 }
-
-/*# NosotrosCss */
-
-#aboutBox {
-  background-color: #3a3243;
-  border-radius: 15px;
-  border-color: #1a1418;
-  border-style: solid;
-  border-width: 3px;
-  color: #e1e1e1;
-  text-align: center;
-  padding: 10px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
-  margin: 12px;
-}
-
-/*# ClubCss */
-
 #clubBox {
   background-color: #3a3243;
   border-radius: 15px;
@@ -377,3 +330,5 @@ button {
   border-radius: 8px;
   box-shadow: #daa520 0px 0px 10px 0px;
 }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,15 @@
+body {
+  background-color: #1a1418;
+  margin: 0;
+}
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  i {
+    color: #daa520;
+    display: none;
+  }
+}
