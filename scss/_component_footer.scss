@@ -16,11 +16,6 @@
   width: 100%;
 }
 
-.icon {
-  width: 40px;
-  height: 40px;
-}
-
 .icon button:hover {
   background-color: #1a1418;
   border-radius: 8px;
@@ -35,10 +30,14 @@
   letter-spacing: 1.5px;
 }
 @media screen and (max-width: 768px) {
+  .icon {
+    width: 30px;
+    height: 30px;
+  }
+
   .footerBox {
     display: none;
   }
-
   .footerText {
     font-size: 1rem;
   }
