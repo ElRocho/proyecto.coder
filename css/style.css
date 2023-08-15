@@ -278,6 +278,19 @@ button {
   grid-column: 8/12;
 }
 
+@media screen and (max-width: 767px) {
+  .gridBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .gridLeft {
+    grid-column: 2/4;
+  }
+  .gridRight {
+    grid-column: 2/4;
+  }
+}
 .text {
   color: #e1e1e1;
   font-family: "Manrope", sans-serif;
