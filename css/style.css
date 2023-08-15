@@ -48,6 +48,7 @@ button {
   color: #e1e1e1;
   font-family: "Manrope", sans-serif;
   font-weight: 500;
+  font-size: 1rem;
   font-size: 1vw;
   letter-spacing: 1.5px;
 }
@@ -75,6 +76,8 @@ button {
   text-transform: uppercase;
   text-decoration: none;
   font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
   font-weight: 500;
   color: #e1e1e1;
   transition: all 0.3s ease;
@@ -148,6 +151,8 @@ button {
     text-decoration: none;
     font-family: "Manrope", sans-serif;
     font-weight: 500;
+    font-size: 1rem;
+    font-weight: 500;
     color: #e1e1e1;
     transition: all 0.3s ease;
     letter-spacing: 1.5px;
@@ -194,7 +199,8 @@ button {
   border-radius: 5px;
   padding: 12px;
   font-family: "Manrope", sans-serif;
-  font-size: 1.5vw;
+  font-weight: 500;
+  font-size: 1rem;
 }
 
 .adsTextBox p:hover {

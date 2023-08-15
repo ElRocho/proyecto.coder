@@ -14,8 +14,7 @@
   color: #1a1418;
   border-radius: 5px;
   padding: 12px;
-  font-family: "Manrope", sans-serif;
-  font-size: 1.5vw;
+  @include textFormat;
 }
 
 .adsTextBox p:hover {
