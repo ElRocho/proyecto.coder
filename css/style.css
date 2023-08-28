@@ -156,6 +156,7 @@ button {
 .imgBox {
   margin-top: 3rem;
   row-gap: 1rem;
+  margin-left: 0.5rem;
 }
 .imgBox .imgSize {
   width: 700px;
