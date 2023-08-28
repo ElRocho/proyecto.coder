@@ -25,12 +25,18 @@ button {
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
-}
-
-.footer_wrapper {
-  position: absolute;
   bottom: 0;
-  width: 100%;
+}
+.footerBox .footerText {
+  color: #e1e1e1;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  font-size: 1vw;
+  letter-spacing: 1.5px;
+}
+.footerBox.absolute {
+  position: absolute;
 }
 
 .icon {
@@ -42,15 +48,6 @@ button {
   background-color: #1a1418;
   border-radius: 8px;
   transition: all 0.3s ease;
-}
-
-.footerText {
-  color: #e1e1e1;
-  font-family: "Manrope", sans-serif;
-  font-weight: 500;
-  font-size: 1rem;
-  font-size: 1vw;
-  letter-spacing: 1.5px;
 }
 
 @media screen and (max-width: 768px) {
@@ -70,41 +67,21 @@ button {
   justify-content: space-around;
   align-items: center;
 }
-
-.navBox h1 {
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-family: "Manrope", sans-serif;
-  font-weight: 500;
-  font-size: 1rem;
-  font-weight: 500;
-  color: #e1e1e1;
-  transition: all 0.3s ease;
-  font-size: 20px;
-  letter-spacing: 1.5px;
-  margin: 0px;
-}
-
 .navBar a:visited {
   color: #e1e1e1;
 }
-
 .navBar a:hover {
   color: #daa520;
   background-color: #3a3243;
 }
-
 .navBar a:first-child {
   border-left: none;
   border-radius: 0px 0px 8px 0px;
 }
-
 .navBar a:last-child {
   border-right: none;
   border-radius: 0px 0px 0px 8px;
 }
-
 .navBar a:link {
   text-align: center;
   text-transform: uppercase;
@@ -116,8 +93,7 @@ button {
   font-size: 20px;
   letter-spacing: 1.5px;
 }
-
-.navBox {
+.navBar .navBox {
   background-color: transparent;
   list-style-position: inside;
   list-style: none;
@@ -131,55 +107,19 @@ button {
   .navBar {
     position: fixed;
     bottom: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     width: 100%;
     background-color: #3a3243;
     border-radius: 8px 8px 0px 0px;
   }
-  .navHide {
-    display: none;
-  }
-  .navBox {
-    border-radius: 8px 8px 0px 0px;
-    transition: all 0.3s ease;
-  }
-  .navBox h1 {
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-family: "Manrope", sans-serif;
-    font-weight: 500;
-    font-size: 1rem;
-    font-weight: 500;
-    color: #e1e1e1;
-    transition: all 0.3s ease;
-    letter-spacing: 1.5px;
-    margin: 0px;
-    font-size: 0px;
-  }
-  .navBar a:visited {
-    color: #e1e1e1;
-  }
-  .navBar a:first-child {
-    border-left: none;
-    border-radius: 8px 8px 0px 0px;
-  }
-  .navBar a:last-child {
-    border-right: none;
-    border-radius: 8px 8px 0px 0px;
-  }
   .navBar a:link {
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-family: "Manrope", sans-serif;
-    font-weight: 500;
-    color: #e1e1e1;
-    transition: all 0.3s ease;
     font-size: 10px;
-    letter-spacing: 1.5px;
+  }
+  .navBar .navBox {
+    border-radius: 8px 8px 0px 0px;
+    transition: all 0.3s ease;
+  }
+  .navBar .navBox .navHide {
+    display: none;
   }
 }
 .adsTextBox {
@@ -192,7 +132,6 @@ button {
   margin-bottom: 1rem;
   text-align: center;
 }
-
 .adsTextBox p {
   background-color: rgba(218, 165, 32, 0.6);
   color: #1a1418;
@@ -202,7 +141,6 @@ button {
   font-weight: 500;
   font-size: 1rem;
 }
-
 .adsTextBox p:hover {
   background-color: rgba(218, 165, 32, 0.8);
   color: #1a1418;
@@ -219,8 +157,7 @@ button {
   margin-top: 3rem;
   row-gap: 1rem;
 }
-
-.imgSize {
+.imgBox .imgSize {
   width: 700px;
   height: auto;
   margin-left: 2%;
@@ -258,11 +195,12 @@ button {
 }
 .gridBox {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 6rem;
+  padding: 2rem;
 }
-
-.catalogoBox {
+.gridBox .catalogoBox {
   list-style-type: none;
   background-color: #3a3243;
   border-radius: 15px;
@@ -274,34 +212,23 @@ button {
   padding: 10px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
   margin: 12px;
-  max-width: max-content;
+  width: 100%;
   min-width: min-content;
 }
-
-.gridLeft {
-  grid-column: 2/6;
-}
-
-.gridRight {
-  grid-column: 8/12;
-}
-
-.square {
+.gridBox .catalogoBox .square {
   height: 300px;
   width: 300px;
   border-radius: 12px;
   box-shadow: #1a1418;
 }
-
-.buyButton {
+.gridBox .catalogoBox .buyButton {
   background-color: #1a1418;
   border-color: #e1e1e1;
   color: #e1e1e1;
   border-radius: 6px;
   padding: 0.5rem;
 }
-
-.buyButton:hover {
+.gridBox .catalogoBox .buyButton:hover {
   background-color: #daa520;
   border-color: #1a1418;
   color: #1a1418;
@@ -310,23 +237,16 @@ button {
   transition: 300ms;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 880px) {
   .gridBox {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    place-items: center;
   }
-  .gridLeft {
-    grid-column: 2/4;
+  .gridBox .catalogoBox {
+    max-width: 332px;
   }
-  .gridRight {
-    grid-column: 2/4;
-  }
-  .square {
-    height: 300px;
-    width: 300px;
-  }
-  .square:last-child {
+  .gridBox .square:last-child {
     margin-bottom: 150px;
   }
 }
@@ -337,11 +257,6 @@ button {
   font-size: 1rem;
   letter-spacing: 1.5px;
   text-align: center;
-}
-
-.icon {
-  width: 48px;
-  height: 48px;
 }
 
 .shipBox {
@@ -394,7 +309,6 @@ button {
   border-radius: 8px;
   box-shadow: #daa520 0px 0px 10px 0px;
 }
-
 .clubJoin:hover {
   background-color: #daa520;
   border-color: #1a1418;

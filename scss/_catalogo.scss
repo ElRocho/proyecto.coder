@@ -1,73 +1,56 @@
 .gridBox {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 6rem;
+  padding: 2rem;
+  .catalogoBox {
+    list-style-type: none;
+    background-color: #3a3243;
+    border-radius: 15px;
+    border-color: #1a1418;
+    border-style: solid;
+    border-width: 3px;
+    color: #e1e1e1;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    margin: 12px;
+    width: 100%;
+    min-width: min-content;
+    .square {
+      height: 300px;
+      width: 300px;
+      border-radius: 12px;
+      box-shadow: #1a1418;
+    }
+    .buyButton {
+      background-color: #1a1418;
+      border-color: #e1e1e1;
+      color: #e1e1e1;
+      border-radius: 6px;
+      padding: 0.5rem;
+      &:hover {
+        background-color: #daa520;
+        border-color: #1a1418;
+        color: #1a1418;
+        border-radius: 6px;
+        box-shadow: #daa520 0px 0px 10px 0px;
+        transition: 300ms;
+      }
+    }
+  }
 }
-
-.catalogoBox {
-  list-style-type: none;
-  background-color: #3a3243;
-  border-radius: 15px;
-  border-color: #1a1418;
-  border-style: solid;
-  border-width: 3px;
-  color: #e1e1e1;
-  text-align: center;
-  padding: 10px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
-  margin: 12px;
-  max-width: max-content;
-  min-width: min-content;
-}
-
-.gridLeft {
-  grid-column: 2 / 6;
-}
-
-.gridRight {
-  grid-column: 8 / 12;
-}
-.square {
-  height: 300px;
-  width: 300px;
-  border-radius: 12px;
-  box-shadow: #1a1418;
-}
-
-.buyButton {
-  background-color: #1a1418;
-  border-color: #e1e1e1;
-  color: #e1e1e1;
-  border-radius: 6px;
-  padding: 0.5rem;
-}
-
-.buyButton:hover {
-  background-color: #daa520;
-  border-color: #1a1418;
-  color: #1a1418;
-  border-radius: 6px;
-  box-shadow: #daa520 0px 0px 10px 0px;
-  transition: 300ms;
-}
-
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 880px) {
   .gridBox {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-  }
-  .gridLeft {
-    grid-column: 2 / 4;
-  }
-  .gridRight {
-    grid-column: 2 / 4;
-  }
-  .square {
-    height: 300px;
-    width: 300px;
-  }
-  .square:last-child {
-    margin-bottom: 150px;
+    grid-template-columns: 1fr;
+    place-items: center;
+    .catalogoBox {
+      max-width: 332px;
+    }
+    .square:last-child {
+      margin-bottom: 150px;
+    }
   }
 }

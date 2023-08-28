@@ -17,12 +17,11 @@
   color: #e1e1e1;
   border-radius: 8px;
   box-shadow: #daa520 0px 0px 10px 0px;
-}
-
-.clubJoin:hover {
-  background-color: #daa520;
-  border-color: #1a1418;
-  color: #1a1418;
-  border-radius: 8px;
-  box-shadow: #daa520 0px 0px 10px 0px;
+  &:hover {
+    background-color: #daa520;
+    border-color: #1a1418;
+    color: #1a1418;
+    border-radius: 8px;
+    box-shadow: #daa520 0px 0px 10px 0px;
+  }
 }

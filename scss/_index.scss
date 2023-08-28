@@ -1,13 +1,12 @@
 .imgBox {
   margin-top: 3rem;
   row-gap: 1rem;
-}
-
-.imgSize {
-  width: 700px;
-  height: auto;
-  margin-left: 2%;
-  margin-right: 2%;
+  .imgSize {
+    width: 700px;
+    height: auto;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
 }
 
 @media (max-width: 767px) {
